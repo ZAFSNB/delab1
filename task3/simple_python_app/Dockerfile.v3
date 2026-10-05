@@ -1,0 +1,16 @@
+# v3. В образ копируется только нужный файл app.py, зависимости ставятся через bind mount
+# NB: зафиксирована базовая версия python:3.12.1 (python:latest = 3.14 несовместим с psycopg2==2.9.9)
+FROM python:3.12.1
+# -- Медленные операции --
+# Установка системных зависимостей (в т.ч. для зависимостей python)
+RUN apt-get update \
+    && apt-get install -y gcc
+# Установка зависимостей python
+RUN --mount=type=bind,source=requirements.txt,target=/app/requirements.txt \
+    pip install -r /app/requirements.txt
+# -- Быстрые операции --
+# Копирование кода приложения
+COPY app.py /app/
+# Установка рабочей директории
+WORKDIR /app
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0"]

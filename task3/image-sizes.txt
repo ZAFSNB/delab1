@@ -1,0 +1,26 @@
+----- after v1 -----
+IMAGE                  ID             DISK USAGE   CONTENT SIZE   EXTRA
+simple_python_app:v1   88b8e3580cb7       1.61GB          427MB        
+simple_python_app:v5   0d34c62cd328        264MB         64.4MB        
+simple_python_app:v6   d92215ad154d        264MB         64.4MB        
+----- after v2 -----
+IMAGE                  ID             DISK USAGE   CONTENT SIZE   EXTRA
+simple_python_app:v1   88b8e3580cb7       1.61GB          427MB        
+simple_python_app:v2   3fb18025650d       1.61GB          427MB        
+simple_python_app:v5   0d34c62cd328        264MB         64.4MB        
+simple_python_app:v6   d92215ad154d        264MB         64.4MB        
+----- after v3 -----
+IMAGE                  ID             DISK USAGE   CONTENT SIZE   EXTRA
+simple_python_app:v1   88b8e3580cb7       1.61GB          427MB        
+simple_python_app:v2   3fb18025650d       1.61GB          427MB        
+simple_python_app:v3   1fdfa7e8fa7f       1.61GB          427MB        
+simple_python_app:v5   0d34c62cd328        264MB         64.4MB        
+simple_python_app:v6   d92215ad154d        264MB         64.4MB        
+----- after v4 -----
+IMAGE                  ID             DISK USAGE   CONTENT SIZE   EXTRA
+simple_python_app:v1   88b8e3580cb7       1.61GB          427MB        
+simple_python_app:v2   3fb18025650d       1.61GB          427MB        
+simple_python_app:v3   1fdfa7e8fa7f       1.61GB          427MB        
+simple_python_app:v4   2cad9cfed998        1.5GB          386MB        
+simple_python_app:v5   0d34c62cd328        264MB         64.4MB        
+simple_python_app:v6   d92215ad154d        264MB         64.4MB        
