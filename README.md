@@ -18,6 +18,3 @@ in folders `task1`, `task2`, `task3`, `task4`.
 
 Чжао Аофэй, группа 13.
 
-# Additional Notes
-
-Репозиторий: <https://github.com/ВАШ_ЛОГИН/LabRabota1>
